@@ -1,0 +1,14 @@
+
+pragma solidity ^0.8.20;
+
+import "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+
+contract MockEURC is ERC20 {
+    constructor() ERC20("Euro Coin", "EURC") {
+        _mint(msg.sender, 1_000_000 * 10**18);
+    }
+
+    function mint(address to, uint256 amount) public {
+        _mint(to, amount);
+    }
+}
