@@ -150,9 +150,9 @@ function App() {
         
         {/* HEADER */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
-          <h2 style={{ margin: 0, fontWeight: "800", background: "linear-gradient(90deg, #2196F3, #E040FB)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+          <h2 style={{ margin: 0, fontWeight: "800", background: "linear-gradient(90deg, #FFD700, #FDB931)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Arc DeFi
-          </h2>
+           </h2>
           {!account ? (
             <button onClick={connect} style={{ padding: "8px 16px", borderRadius: "8px", border: "none", background: theme.primary, color: "white", cursor: "pointer", fontWeight: "bold" }}>Connect</button>
           ) : (
